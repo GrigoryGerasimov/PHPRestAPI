@@ -1,6 +1,5 @@
 <?php
 
-
 function collectData(array $data): array
 {
     $dataCollection = array();
