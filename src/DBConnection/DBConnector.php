@@ -32,8 +32,7 @@ class DBConnector implements DBConnectorInterface
             };
             
         } catch(\UnhandledMatchError $err) {
-            echo $err->message;
-            die();
+            exit($err->message);
         }
         
         return $connection;
