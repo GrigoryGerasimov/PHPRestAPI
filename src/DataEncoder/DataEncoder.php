@@ -3,17 +3,19 @@
 namespace PHPRestAPI\RestAPI\DataEncoder;
 
 
-class DataEncoder
+final class DataEncoder
 {
-    private ?array $dataCollection = null;
+    private static ?array $dataCollection = null;
     
-    public function __construct(array $dataCollection)
+    public static function encode(array $dataCollection): string|false
     {
-        $this->dataCollection = $dataCollection;
+        self::$dataCollection = $dataCollection;
+        
+        return json_encode(self::$dataCollection);
     }
     
-    public function encode(): string|false
+    public static function getDataCollection(): ?array
     {
-        return json_encode($this->dataCollection);
+        return self::$dataCollection;
     }
 }
