@@ -1,0 +1,16 @@
+{
+	"autoload" : {
+		"psr-4" : {
+			"PHPRestAPI\\RestAPI\\" : "src"
+		}
+	},
+	"name" : "phprestapi/phprestapi",
+	"require" : {
+		"php" : ">=8.2"
+	},
+	"config": {
+		"platform": {
+			"php": "8.2.0"
+		}
+	}
+}
