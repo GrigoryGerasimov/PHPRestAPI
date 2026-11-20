@@ -1,1 +1,1 @@
-RestAPI in native PHP + PHPMyAdmin
+RestAPI in native PHP + MySQL
